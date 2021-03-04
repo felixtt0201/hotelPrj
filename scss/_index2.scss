@@ -1,0 +1,137 @@
+.index2_header{
+  background-image: url(https://images.unsplash.com/photo-1519974719765-e6559eac2575?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  
+};
+
+.header_logo{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .logo_bgc{
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    background-color: #7f8fa6;
+    z-index: 1;
+  }
+  a{
+    // position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdde1;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    font-size: 31px;
+    letter-spacing: 3.24px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid #ffffff;  
+    z-index: 2;
+  }
+};
+
+.header_Info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding-top: 80px;
+  padding-bottom: 150px;
+  .header_Info_icon{
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  ul{
+    border-left: 1px solid #ffffff;
+    li{
+      font-size: 20px;
+      padding: 15px 0;
+      i{
+        font-size: 22px;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+
+.container_Index2{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  li{
+    box-shadow: 2px 2px 9px 0 rgba(0,0,0,0.18);
+    width: 25%;
+    margin: 35px;
+    background-color:#F7F7F7;
+    position: relative;
+    &:hover .room_detail{
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+      
+    }
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 280px;
+    }    
+  }
+};
+
+.room_title{
+  margin: 21px 0;
+  padding-left: 20px;
+  
+}
+
+.p-l2{
+  padding-left: 20px;
+  margin-top: -21px;
+}
+.p-r2{
+  padding-right: 20px;
+}
+
+.room_detail{
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+  width: 100%;
+  background-color: #F7F7F7;
+  p{
+    margin-bottom: 23px;
+  };
+  .room_dayPrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  .normalDay{
+    padding-left:20px;
+    font-size: 21px;
+    letter-spacing: 2.19px;
+    line-height: 31px;
+    };
+  }
+  .holiDay{
+    font-size: 12px;
+    color: #6D7278;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+  }
+}
+
+
+
