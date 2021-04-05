@@ -156,7 +156,7 @@ const render = (data) => {
     </div>`;
 
   const str = `<div class="info_detail_content">
-    <h1>${data.name}<a href="./index_2.html">Back To Home</a></h1>
+    <h1>${data.name}<a href="./index.html">Back To Home</a></h1>
     
     <div class="info_detail_content_infos">
       <p>房客人數限制：${data.descriptionShort.GuestMin} - ${data.descriptionShort.GuestMax}</p>
